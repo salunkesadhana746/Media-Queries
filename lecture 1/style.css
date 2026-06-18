@@ -1,0 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.box {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+  
+}
+
+.box-1 {
+    height: 400px;
+    width: 400px;
+    background-color: bisque;
+    margin: 10px;
+}
+
+@media (max-width: 900px) {
+    .box-1 {
+        background-color: aqua;
+        height: 300px;
+        width: 300px;
+        border-radius: 10px;
+
+    }
+}
+@media (min-width: 1000px) {
+    .box-1 {
+        background-color:cornflowerblue;
+        height: 300px;
+        width: 300px;
+        border-radius: 10px;
+
+    }
+}
