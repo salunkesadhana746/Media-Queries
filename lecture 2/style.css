@@ -10,10 +10,11 @@ body {
 }
 
 .box {
-    padding: 5px;
-    margin: 5px;
+    padding: 8px;
+    margin: 8px;
     border-radius: 8px;
     background-color: azure;
+
 }
 
 .box-row{
@@ -98,7 +99,6 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
 }
 
@@ -107,9 +107,6 @@ body {
     align-items: center;
 }
 
-nav {
-    background-color: rgb(251, 244, 234);
-}
 
 @media (max-width: 1400px){
     .container{
