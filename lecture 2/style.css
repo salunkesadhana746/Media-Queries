@@ -18,12 +18,13 @@ body {
 
 .box-row{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .col {
-    width: 20%;
+    width: 100%;
 }
-/*.col-2 {
+.col-2 {
     width: 50%;
 }
 .col-3 {
@@ -37,23 +38,77 @@ body {
 }
 .col-6 {
     width: 16.66%;
-}*/
+}
+
+.d-flex {
+    display: flex;
+}
 
 .justify-center {
     justify-content: center;
 }
+.justify-start {
+    justify-content: start;
+}
+.justify-end {
+    justify-content: end;
+}
 .justify-evenly {
     justify-content: space-evenly;
+}
+.justify-between {
+    justify-content: space-between;
+}
+
+.m-1 {
+    margin: 4px;
+}
+
+.m-2 {
+    margin: 8px;
+}
+
+.mh-3 {
+    margin: 0px 10px;
+}
+
+.mv-4 {
+    max-width: 8px 0px;
+}
+
+.p-1 {
+    padding: 4px;
+}
+
+.p-2 {
+    padding: 8px;
+}
+
+.ph-1 {
+    padding: 0px 4px;
+}
+.ph-2 {
+    padding: 0px 8px;
+}
+.pv {
+    padding: 8px 0px;
 }
 
 .container-parent {
     width: 100%;
     display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
 .container {
-    width: 1320px;
+    width: 1320px; 
+    align-items: center;
+}
+
+nav {
+    background-color: rgb(251, 244, 234);
 }
 
 @media (max-width: 1400px){
