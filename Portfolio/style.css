@@ -16,7 +16,7 @@ body {
     background-color: azure;
 }
 
-.box-row{
+.box-row {
     display: flex;
     flex-wrap: wrap;
 }
@@ -24,18 +24,23 @@ body {
 .col {
     width: 100%;
 }
+
 .col-2 {
     width: 50%;
 }
+
 .col-3 {
     width: 33.33%;
 }
+
 .col-4 {
     width: 25%;
 }
+
 .col-5 {
     width: 20%;
 }
+
 .col-6 {
     width: 16.66%;
 }
@@ -47,17 +52,35 @@ body {
 .justify-center {
     justify-content: center;
 }
+
 .justify-start {
     justify-content: start;
 }
+
 .justify-end {
     justify-content: end;
 }
+
 .justify-evenly {
     justify-content: space-evenly;
 }
+
 .justify-between {
     justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+.align-start {
+    align-items: start;
+}
+.align-end {
+    align-items: end;
+}
+
+.font-weight-1{
+    font-weight: 600;
 }
 
 .m-1 {
@@ -73,7 +96,15 @@ body {
 }
 
 .mv-4 {
-    max-width: 8px 0px;
+    margin: 4px 0px;
+}
+
+.mv-5 {
+    margin: 8px 0px;
+}
+
+.mv-6 {
+    margin: 12px 0px;
 }
 
 .p-1 {
@@ -87,10 +118,16 @@ body {
 .ph-1 {
     padding: 0px 4px;
 }
+
 .ph-2 {
     padding: 0px 8px;
 }
-.pv {
+
+.pv-1 {
+    padding: 4px 0px;
+}
+
+.pv-2 {
     padding: 8px 0px;
 }
 
@@ -103,8 +140,8 @@ body {
 }
 
 .container {
-    width: 1320px; 
-    align-items: center;
+    width: 1320px;
+
 }
 
 nav {
@@ -113,10 +150,12 @@ nav {
 
 nav a {
     text-decoration: none;
+    font-weight: 600;
+    color: black;
 }
 
-@media (max-width: 1400px){
-    .container{
+@media (max-width: 1400px) {
+    .container {
         width: 1140px;
     }
 
@@ -125,41 +164,42 @@ nav a {
     }
 }
 
-@media (max-width: 1200px){
-    .container{
+@media (max-width: 1200px) {
+    .container {
         width: 960px;
     }
 
-     .col {
+    .col {
         width: 33.33%;
     }
 }
 
-@media (max-width: 992px){
-    .container{
+@media (max-width: 992px) {
+    .container {
         width: 720px;
     }
 
-     .col {
+    .col {
         width: 25%;
     }
 }
 
-@media (max-width: 768px){
-    .container{
+@media (max-width: 768px) {
+    .container {
         width: 540px;
     }
 
-     .col {
+    .col {
         width: 50%;
     }
 }
-@media (max-width: 576px){
-    .container{
+
+@media (max-width: 576px) {
+    .container {
         width: 100%;
     }
 
-     .col {
+    .col {
         width: 100%;
     }
 }
