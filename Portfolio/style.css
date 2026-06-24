@@ -21,6 +21,14 @@ body {
     flex-wrap: wrap;
 }
 
+.edu-col {
+    width: 100%;
+}
+
+.skill-col {
+    width: 100%;
+}
+
 .col {
     width: 100%;
 }
@@ -42,11 +50,15 @@ body {
 }
 
 .col-6 {
-    width: 16.66%;
+    width: 15%;
 }
 
 .d-flex {
     display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
 }
 
 .justify-center {
@@ -72,14 +84,16 @@ body {
 .align-center {
     align-items: center;
 }
+
 .align-start {
     align-items: start;
 }
+
 .align-end {
     align-items: end;
 }
 
-.font-weight-1{
+.font-weight-1 {
     font-weight: 600;
 }
 
@@ -136,12 +150,10 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
 }
 
 .container {
-    width: 1320px;
-
+    max-width: 1320px;
 }
 
 nav {
@@ -154,52 +166,86 @@ nav a {
     color: black;
 }
 
-@media (max-width: 1400px) {
-    .container {
-        width: 1140px;
-    }
-
-    .col {
-        width: 20%;
-    }
+.edu-box {
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    align-items: center;
 }
 
-@media (max-width: 1200px) {
-    .container {
-        width: 960px;
-    }
-
-    .col {
-        width: 33.33%;
-    }
+.skills-box {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 16px;
 }
 
-@media (max-width: 992px) {
+@media (min-width: 576px) {
     .container {
-        width: 720px;
+        width: 100%;
     }
 
-    .col {
-        width: 25%;
+    .edu-col {
+        width: 100%;
+        align-items: center;
     }
-}
-
-@media (max-width: 768px) {
-    .container {
-        width: 540px;
-    }
-
-    .col {
+     .skill-col {
         width: 50%;
     }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 768px) {
     .container {
-        width: 100%;
+        width: 540px;
     }
 
-    .col {
-        width: 100%;
+    .edu-col {
+        width: 46%;
+    }
+    .skill-col {
+        width: 30%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 720px;
+    }
+
+    .edu-col {
+        width: 30%;
+    }
+     .skill-col {
+        width: 18%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+
+    .edu-col {
+        width: 30%;
+    }
+    .skill-col {
+    width: 15%;
+}
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1140px;
+    }
+
+    .edu-col {
+        width: 30%;
+    }
+
+    .skill-col {
+        width: 15%;
     }
 }
