@@ -38,7 +38,7 @@ body {
 }
 
 .col-3 {
-    width: 33.33%;
+    width: 30%;
 }
 
 .col-4 {
@@ -145,6 +145,10 @@ body {
     padding: 8px 0px;
 }
 
+.border {
+    border: 1px solid black;
+}
+
 .container-parent {
     width: 100%;
     display: flex;
@@ -160,7 +164,7 @@ nav {
     background-color: rgb(251, 244, 234);
 }
 
-nav a {
+a {
     text-decoration: none;
     font-weight: 600;
     color: black;
@@ -174,13 +178,21 @@ nav a {
     align-items: center;
 }
 
-.skills-box {
+.skills-box, .con-box {
     border: 1px solid black;
     margin: 5px;
     padding: 10px;
     font-weight: 600;
     font-size: 16px;
 }
+.project-img {
+    height: 300px;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 2px;
+}
+
+
 
 @media (min-width: 576px) {
     .container {
