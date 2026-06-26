@@ -36,7 +36,6 @@ a {
 .gap-2 {
     gap: 10px;
 }
-
 .gap-3 {
     gap: 30px;
 }
@@ -227,7 +226,7 @@ section3 {
 }
 
 .milk-box {
-    width: 80%;
+     width: 80%;
     display: flex;
     overflow: auto;
     scroll-behavior: smooth;
@@ -277,23 +276,17 @@ section3 {
     border: none;
     background-color: rgba(0, 0, 0, 0.2);
 }
-
 footer {
     width: 100%;
 }
-
 .footer-color {
     background-color: #1E1E1E;
-
+    
 }
-
-footer a,
-h2 {
+footer a, h2 {
     color: white;
     margin: 10px;
-}
-
-.hr {
+}.hr {
     padding: 1px;
     background-color: white;
     margin-top: 20px;
@@ -305,36 +298,4 @@ h2 {
     height: 60px;
     color: white;
     width: 80%;
-}
-
-@media (min-width:576px) {
-    .container {
-        max-width: 540px;
-    }
-
-    
-}
-
-@media (min-width:768px) {
-    .container {
-        max-width: 720px;
-    }
-}
-
-@media (min-width:992px) {
-    .container {
-        max-width: 960px;
-    }
-}
-
-@media (min-width:1200px) {
-    .container {
-        max-width: 1140px;
-    }
-}
-
-@media (min-width:1400px) {
-    .container {
-        max-width: 1320px;
-    }
 }
