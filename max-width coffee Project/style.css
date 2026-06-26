@@ -299,3 +299,168 @@ footer a, h2 {
     color: white;
     width: 80%;
 }
+
+@media (max-width:1400px){
+
+    .container{
+        max-width:1320px;
+    }
+
+}
+
+@media (max-width:1200px){
+
+    .container{
+        max-width:1140px;
+    }
+
+    .col-2{
+        width:60%;
+    }
+
+    .milk-box{
+        width:90%;
+    }
+
+}
+
+@media (max-width:992px){
+
+    .container{
+        max-width:960px;
+    }
+
+    .col-2{
+        width:75%;
+    }
+
+    .top-coffee{
+        flex-wrap:wrap;
+        gap:20px;
+        justify-content:center;
+    }
+
+    .blog-box{
+        width:45%;
+    }
+
+    .shop-nav-btn{
+        left:50px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    nav{
+        display: flex;
+        justify-content: space-between; 
+    }
+
+
+    .col-2{
+        width:100%;
+        flex-wrap:wrap;
+        gap:15px;
+        justify-content:center;
+    }
+
+    .top-coffee{
+        flex-wrap:wrap;
+        align-items:center;
+    }
+
+    .blog-box{
+        flex-wrap:wrap;
+        width:40%;
+    }
+
+    section3 .d-flex{
+        flex-wrap:wrap;
+    }
+
+    footer > div:nth-child(2){
+        width: 100%;
+    }
+
+    .col-4{
+        width:80%;
+        text-align:center;
+    }
+
+    .data-line{
+        flex-wrap:wrap;
+        height:auto;
+        gap:10px;
+        padding:15px;
+    }
+
+    .shop-nav-btn{
+        left:30px;
+        top:20px;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .container{
+        width:100%;
+    }
+    nav {
+        width: 100%;
+    }
+    nav img{
+        width:70px;
+        height:70px;
+    }
+
+    .size-1{
+        font-size:14px;
+    }
+
+    h1{
+        font-size:24px;
+        text-align:center;
+    }
+
+    p{
+        text-align:center;
+    }
+    
+    .top-coffee img{
+        width:220px;
+        height:220px;
+    }
+
+    .milk-box-1{
+        width:240px;
+    }
+
+    .blog-box{
+        width:60%;
+    }
+
+    .blog-box img{
+        width:100%;
+        height: 150px;
+    }
+
+    .col-4{
+        flex-wrap: wrap;
+        width:100%;
+    }
+
+    .data-line{
+        flex-wrap: wrap;
+        text-align:center;
+    }
+
+    .shop-nav-btn{
+        padding:8px 12px;
+        font-size:14px;
+        left:15px;
+        top:10px;
+    }
+
+}
