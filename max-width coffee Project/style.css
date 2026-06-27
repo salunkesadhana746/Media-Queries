@@ -155,7 +155,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(32, 14, 1);
+    background-color: #514444;
 }
 
 .container {
@@ -180,6 +180,7 @@ section3 {
 }
 
 .hero {
+    position: relative;
     height: 100%;
     width: 100%;
 }
@@ -192,7 +193,8 @@ section3 {
 nav {
     width: 100%;
 }
-nav a{
+
+nav a {
     display: flex;
     flex-wrap: wrap;
 }
@@ -201,12 +203,13 @@ nav a{
     padding: 10px 15px;
     border-radius: 20px;
     position: absolute;
-    top: 95%;
-    left: 10%;
+    top: 51%;
+    left: 5%;
     font-size: 16px;
     font-weight: 600;
     margin: 10px;
     display: block;
+    border: none;
 }
 
 .top-coffee {
@@ -300,9 +303,8 @@ footer {
 
 }
 
-footer a,
-h2 {
-    color: white;
+footer a {
+    color: #c5ab9d;
     margin: 10px;
 }
 
@@ -314,7 +316,7 @@ h2 {
 }
 
 .data-line {
-    background-color: rgb(28, 25, 25);
+    background-color: #7F6459;
     height: 60px;
     color: white;
     width: 80%;
@@ -333,8 +335,13 @@ h2 {
     .container {
         max-width: 1140px;
     }
-    
-  
+
+    .hero .shop-nav-btn {
+        position: absolute;
+        top: 51%;
+        left: 5%;
+    }
+
     .col-2 {
         width: 60%;
     }
@@ -355,6 +362,12 @@ h2 {
         width: 75%;
     }
 
+    .hero .shop-nav-btn {
+        position: absolute;
+        top: 51%;
+        left: 5%;
+    }
+
     .top-coffee {
         flex-wrap: wrap;
         gap: 20px;
@@ -363,11 +376,9 @@ h2 {
 
     .blog-box {
         width: 50%;
+        margin: 10px;
         flex-wrap: wrap;
-
     }
-
-   
 }
 
 @media (max-width:768px) {
@@ -379,6 +390,14 @@ h2 {
         justify-content: center;
     }
 
+    .hero .shop-nav-btn {
+        position: absolute;
+        top: 51%;
+        left: 5%;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
     .top-coffee {
         flex-wrap: wrap;
         align-items: center;
@@ -387,6 +406,7 @@ h2 {
     .blog-box {
         flex-wrap: wrap;
         width: 40%;
+        margin: 10px;
     }
 
     section3 .d-flex {
@@ -419,8 +439,12 @@ h2 {
     }
 
     nav {
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        font-size: 15px;
     }
 
     nav img {
@@ -441,9 +465,18 @@ h2 {
         text-align: center;
     }
 
+    .hero .shop-nav-btn {
+        position: absolute;
+        top: 51%;
+        left: 4%;
+        font-size: 8px;
+        padding: 5px;
+    }
+    
     .top-coffee img {
         width: 220px;
         height: 220px;
+        
     }
 
     .milk-box-1 {
@@ -458,10 +491,12 @@ h2 {
         width: 100%;
         height: 150px;
     }
-     footer>div:nth-child(2) {
+
+    footer>div:nth-child(2) {
         width: 100%;
         flex-wrap: wrap;
     }
+
     .col-4 {
         flex-wrap: wrap;
         width: 100%;
@@ -472,5 +507,5 @@ h2 {
         text-align: center;
     }
 
-   
+
 }
