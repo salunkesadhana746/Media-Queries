@@ -4,18 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Min Coffee House</title>
+    <title>min Coffee Home</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
     <div class="container-parent">
-        <nav class="container d-flex justify-between align-center col">
+        <nav class="nav container d-flex justify-between align-center">
             <img height="100px" width="100px" src="assets/image/coffee-logo.png" alt="">
-            <div class="col-2 d-flex justify-evenly size-1">
+            <div class="gap-2 d-flex justify-evenly  p-2">
                 <a href="#">Home</a>
                 <a href="#">Menu</a>
                 <a href="#">Blog</a>
@@ -24,17 +23,18 @@
                 <i class="ri-search-line"></i>
             </div>
         </nav>
-        <section class="container col">
-            <div class="hero d-flex justify-start align-center ">
-                <button class="shop-nav-btn color">Shop now</button>
+        <section class="container ">
+            <div class="hero">
+                <img src="assets/image/hero-img.png" alt="" width="100%" height="100%">
+                <a href="#"><button class="shop-nav-btn color  d-flex align-center">Shop now</button></a>
             </div>
         </section>
         <section1 class="container">
-            <div class="d-flex flex-col align-center gap size-1">
-                <h1>TOP CATEGORIES</h1>
-                <p>Explore The Recent Most Bought Drinks This Week</p>
+            <div class="d-flex flex-col justify-center align-center gap size-1">
+                <h1 class="h1">TOP CATEGORIES</h1>
+                <p class="size-p">Explore The Recent Most Bought Drinks This Week</p>
             </div>
-            <div class="top-coffee d-flex col-3 justify-evenly">
+            <div class="top-coffee d-flex col-3 justify-evenly flex-wrap">
                 <div class="blur-effect">
                     <div class="coffee-text d-flex flex-col align-center color-white">
                         <h4>Coffee Mocha</h4>
@@ -58,10 +58,10 @@
                 </div>
             </div>
         </section1>
-        <section2 class="container d-flex flex-col align-center">
-            <div class="d-flex flex-col align-center gap size-1">
-                <h1>TOP MILK SHAKES</h1>
-                <p>Explore The Recent Most Bought Shakes This Week</p>
+        <section2 class="container d-flex flex-col  align-center">
+            <div class="d-flex flex-col align-center  gap size-1">
+                <h1 class="h1">TOP MILK SHAKES</h1>
+                <p class="size-p">Explore The Recent Most Bought Shakes This Week</p>
             </div>
             <div class="milk-box">
                 <div class="milk-box-1 d-flex flex-col align-center">
@@ -112,27 +112,27 @@
             </div>
         </section2>
         <section3 class="container">
-            <div class="d-flex flex-col align-center gap size-1">
-                <h1>LETEST BLOGS</h1>
-                <p>Explore The Recent Most Bought Shakes This Week</p>
+            <div class="d-flex justify-center flex-col align-center gap size-1">
+                <h1 class="h1">LETEST BLOGS</h1>
+                <p class="size-p">Explore The Recent Most Bought Shakes This Week</p>
             </div>
-            <div class="d-flex justify-evenly align-center  ">
+            <div class="d-flex justify-evenly align-center  flex-wrap">
                 <div class="blog-box col-3 d-flex flex-col p-3 gap">
-                    <img src="assets/image/people-coffe-1.jpg" alt="" width="270px" height="150px" class="border-r">
+                    <img src="assets/image/people-coffe-1.jpg" alt="" width="" height="150px" class="border-r">
                     <h3>Coffee Connoisseur</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia ipsam ipsum dolorum
                         provident doloremque culpa maxime ea aliquam vel.</p>
                     <button class="border-r mv-6 ">More view</button>
                 </div>
                 <div class="blog-box col-3 d-flex flex-col p-3 gap">
-                    <img src="assets/image/people-coffe-2.jpg" alt="" width="270px" height="150px" class="border-r">
+                    <img src="assets/image/people-coffe-2.jpg" alt="" width="" height="150px" class="border-r">
                     <h3>Coffee Connoisseur</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia ipsam ipsum dolorum
                         provident doloremque culpa maxime ea aliquam vel.</p>
                     <button class="border-r mv-6 ">More view</button>
                 </div>
                 <div class="blog-box col-3 d-flex flex-col p-3 gap">
-                    <img src="assets/image/people-coffe-3.jpg" alt="" width="270px" height="150px" class="border-r">
+                    <img src="assets/image/people-coffe-3.jpg" alt="" width="" height="150px" class="border-r">
                     <h3>Coffee Connoisseur</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla officia ipsam ipsum dolorum
                         provident doloremque culpa maxime ea aliquam vel.</p>
@@ -140,26 +140,31 @@
                 </div>
             </div>
         </section3>
-        <footer class="container footer-color d-flex flex-col justify-evenly gap-3">
-            <div class=" d-flex justify-center align-center">
+        <footer class="container footer-color d-flex flex-col justify-evenly gap-3 color-white ">
+            <div class="d-flex justify-center align-center">
                 <div class="hr"></div>
             </div>
-            <div class="d-flex justify-center ">
-                <div class="col-4 flex-col">
-                    <h2>Projects</h2>
-                    <a href="#">Shakes</a>
+            <div class="footer d-flex justify-center align-center">
+                <div class="col-4 flex-col d-flex align-center">
+                    <h2>Products</h2>
+                    <div class="d-flex  flex-col mv-6 pv-4">
+                        <a href="#">Shakes</a>
+                        <a href="#">Cold Coffee</a>
+                        <a href="#">Hot Coffee</a>
+                        <a href="#">Cappuccino</a>
+                    </div>
                 </div>
-                <div class="col-4 ">
+                <div class="col-4 flex-col d-flex align-center">
                     <h2>Category</h2>
-                    <div class="color-white d-flex flex-col mv-6 pv-4">
+                    <div class="d-flex flex-col mv-6 pv-4">
                         <a href="#">Men</a>
                         <a href="#">New in</a>
                         <a href="#">Weeky Pick</a>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 flex-col d-flex align-center">
                     <h2>Company Into</h2>
-                    <div class="color-white d-flex flex-col">
+                    <div class="d-flex flex-col mv-6 pv-4">
                         <a href="#">About us</a>
                         <a href="#">Contact us</a>
                         <a href="#">Payment Options</a>
@@ -169,23 +174,23 @@
                         <a href="#">Size Charts</a>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 flex-col d-flex align-center">
                     <h2>Follow us</h2>
-                   <div class="color-white d-flex flex-col">
-                     <a href="#"><i class="ri-instagram-line"></i></a>
-                    <a href="#"><i class="ri-facebook-circle-fill"></i></a>
-                    <a href="#"><i class="ri-youtube-fill"></i></a>
-                   </div>
+                    <div class="d-flex flex-col mv-6 pv-4">
+                        <a href="#"><i class="ri-instagram-line"> Instagram</i></a>
+                        <a href="#"><i class="ri-facebook-circle-fill"> Facebook</i></a>
+                        <a href="#"><i class="ri-youtube-fill"> Youtube</i></a>
+                    </div>
                 </div>
             </div>
             <div class="d-flex justify-center ">
-                <div class="data-line d-flex align-center justify-evenly mv-6 pv-4">
-                <span>Data settings</span>
-                <span>Cookie settings</span>
-                <span>Privacy Policy</span>
-                <span>Teams And Conditions</span>
-                <span>Important</span>
-            </div>
+                <div class="data-line d-flex align-center justify-evenly mv-6 pv-4 flex-wrap">
+                    <span>Data settings</span>
+                    <span>Cookie settings</span>
+                    <span>Privacy Policy</span>
+                    <span>Teams And Conditions</span>
+                    <span>Important</span>
+                </div>
             </div>
 
         </footer>

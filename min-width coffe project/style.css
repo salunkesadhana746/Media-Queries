@@ -25,6 +25,10 @@ a {
     display: flex;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 .flex-col {
     flex-direction: column;
 }
@@ -151,7 +155,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(32, 14, 1);
+    background-color: #514444;
 }
 
 .container {
@@ -161,44 +165,55 @@ a {
 
 section {
     width: 100%;
-    height: 100vh;
 }
 
-section1 {
-    width: 100%;
-}
-
-section2 {
-    width: 100%;
-}
-
+section1,
+section2,
 section3 {
     width: 100%;
 }
 
-.hero {
-    background-image: url(assets/image/hero-img.png);
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    align-items: center;
 
+.hero {
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
-.shop-nav-btn {
+.hero img {
+    position: relative;
+}
+
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero .shop-nav-btn {
     padding: 10px 15px;
     border-radius: 20px;
-    position: relative;
-    top: 55px;
-    left: 80px;
+    position: absolute;
+    top: 51%;
+    left: 5%;
     font-size: 16px;
     font-weight: 600;
+    margin: 10px;
+    display: block;
+    border: none;
 }
 
 .top-coffee {
     width: 100%;
     margin: 24px 0px;
+    gap: 10px;
+
 }
 
 .blur-effect {
@@ -222,7 +237,6 @@ section3 {
     z-index: 2;
     top: 30%;
     left: 30%;
-    transform: translate(-50% -20%);
     gap: 40px;
 }
 
@@ -269,6 +283,7 @@ section3 {
     width: 300px;
     margin: 24px 0px;
     border-radius: 30px;
+    flex-wrap: wrap;
 }
 
 .blog-box button {
@@ -287,9 +302,8 @@ footer {
 
 }
 
-footer a,
-h2 {
-    color: white;
+footer a {
+    color: #c5ab9d;
     margin: 10px;
 }
 
@@ -301,124 +315,220 @@ h2 {
 }
 
 .data-line {
-    background-color: rgb(28, 25, 25);
+    background-color: #7F6459;
     height: 60px;
     color: white;
     width: 80%;
 }
 
+.h1 {
+    font-size: 22px;
+}
+
+.size-p {
+    font-size: 15px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 @media (min-width:576px) {
+
     .container {
         max-width: 540px;
     }
 
-    .col-2{
-        width:70%;
+    nav {
+        flex-direction: column;
     }
 
-    .top-coffee{
-        flex-wrap:wrap;
-        gap:20px;
-        justify-content:center;
+    .col-3 {
+        width: 100%;
+    }
+     .top-coffee {
+        width: 100%;
+        gap: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 
-    .blog-box{
-        width:250px;
+    .col-4 {
+        width: 100%;
     }
 
-    .data-line{
-        flex-wrap:wrap;
-        height:auto;
-        padding:15px;
-        gap:10px;
+    .blog-box {
+        width: 350px;
     }
 
-    
+    .milk-box {
+        width: 100%;
+    }
+
 }
 
 @media (min-width:768px) {
+
     .container {
         max-width: 720px;
     }
-    .col-2{
-        width:60%;
+
+    nav {
+        flex-direction: row;
     }
 
-    .top-coffee{
-        display:flex;
-        justify-content:space-evenly;
+    nav div {
+        gap: 20px;
     }
 
-    .blog-box{
-        width:280px;
+    .hero .shop-nav-btn {
+        top: 55%;
+        left: 5%;
+        font-size: 15px;
     }
 
-    .shop-nav-btn{
-        left:60px;
-        top:40px;
+      .top-coffee {
+        width: 100%;
+        gap: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        
     }
 
-    footer .d-flex{
-        flex-wrap:wrap;
+    .col-3 {
+        width: 45%;
     }
+
+    .col-4 {
+        width: 45%;
+    }
+
+    .blog-box {
+        width: 320px;
+    }
+
+    .footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .data-line {
+        justify-content: space-evenly;
+    }
+
 }
 
 @media (min-width:992px) {
+
     .container {
         max-width: 960px;
     }
 
-    .col-2{
-        width:50%;
+    .col-3 {
+        width: 30%;
+    }
+    nav a,i {
+        margin: 10px;
     }
 
-    .top-coffee{
-        flex-wrap:nowrap;
+    .col-4 {
+        width: 22%;
     }
 
-    .blog-box{
-        width:300px;
+    .hero .shop-nav-btn {
+        top: 52%;
+        left: 5%;
+        font-size: 16px;
     }
 
-    .milk-box{
-        width:90%;
+    .top-coffee {
+        width: 100%;
+        gap: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
     }
 
-    .shop-nav-btn{
-        left:80px;
-        top:55px;
+    .blog-box {
+        width: 300px;
     }
+
+    .footer {
+        flex-wrap: nowrap;
+    }
+
+    .milk-box {
+        width: 90%;
+    }
+
 }
 
 @media (min-width:1200px) {
+
     .container {
         max-width: 1140px;
     }
 
-    .top-coffee{
-        justify-content:space-evenly;
+    .hero .shop-nav-btn {
+        top: 51%;
+        left: 5%;
+    }
+    .top-coffee {
+        width: 100%;
+        gap: 30px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .milk-box {
+        width: 85%;
     }
 
-    .milk-box{
-        width:85%;
+    .data-line {
+        width: 85%;
     }
 
-    .data-line{
-        width:85%;
-    }
 }
 
 @media (min-width:1400px) {
-   
-    .container{
-        max-width:1320px;
+
+    .container {
+        max-width: 1320px;
     }
 
-    .milk-box{
-        width:80%;
+    nav img {
+        width: 100px;
+        height: 100px;
     }
 
-    .data-line{
-        width:80%;
+    nav a {
+        margin: 0px 20px;
     }
+    .hero img {
+        width: 100%;
+    }
+
+    .top-coffee {
+        width: 100%;
+        gap: 30px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .milk-box {
+        width: 80%;
+    }
+
+    .footer {
+        justify-content: space-evenly;
+    }
+
+    .data-line {
+        width: 80%;
+    }
+
 }
